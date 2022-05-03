@@ -13,4 +13,5 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "receiptline4android sample app"
-include ':app'
+include ':sampleapp'
+include ':receiptline4android'

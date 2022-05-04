@@ -1,8 +1,9 @@
-package com.github.otsuka_kohei.receiptline4android
+package com.github.otsuka_kohei.receiptline4android.sample
 
 import android.os.Bundle
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import com.github.otsuka_kohei.receiptline4android.Receiptline
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.launch
 

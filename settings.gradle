@@ -12,6 +12,6 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "receiptline4android sample app"
+rootProject.name = "receiptline4android"
 include ':sampleapp'
 include ':receiptline4android'

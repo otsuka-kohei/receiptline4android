@@ -45,7 +45,7 @@ dependencies {
 
 ## Examples
 ### Input
-```
+```kotlin
 MainScope().launch {
   val receiptLine = Receiptline.getInstance(this@MainActivity)
   val bitmap = 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.github.otsuka_kohei.receiptline4android">
+    package="com.github.otsuka_kohei.receiptline4android.sample">
 
     <application
         android:allowBackup="true"

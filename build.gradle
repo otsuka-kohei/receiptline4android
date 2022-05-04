@@ -2,6 +2,7 @@
 buildscript {
     dependencies {
         classpath 'org.jetbrains.dokka:dokka-gradle-plugin:1.6.21'
+        classpath 'org.jetbrains.kotlin:kotlin-serialization:1.6.21'
     }
 }
 

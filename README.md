@@ -4,7 +4,7 @@
 Get Android bitmap from receipt image of [receiptline](https://github.com/receiptline/receiptline).
 
 ## How to use
-### JitPack
+### Method 1: JitPack (Recommended)
 Add this Maven repository to your root `build.gradle`.
 ```gradle
 allprojects {
@@ -20,7 +20,7 @@ dependencies {
 }
 ```
 
-### GitHub Packages
+### Method 2: GitHub Packages
 Add this Maven repository to your root `build.gradle`.
 ```gradle
 allprojects {

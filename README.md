@@ -43,6 +43,23 @@ dependencies {
 }
 ```
 
+## Examples
+### Input
+```
+MainScope().launch {
+  val receiptLine = Receiptline.getInstance(this@MainActivity)
+  val bitmap = 
+    receiptLine.transformToBitmap(
+      """{w:*,4,8}\n-\n|ITEM | QTY| AMOUNT|\n-\n_Apple | 1| 1.00\n"Banana | 2| 2.00\n`Cherry | 3| 3.00\n-\n{w:*,16}\n^^TOTAL | ^^^6.00\n{c:201234567890;o:ean,hri}\n\n{c:Receiptline;o:qrcode,4}""",
+      dpi = 150f
+    )
+  val imageView: ImageView = findViewById(R.id.imageView)
+  imageView.setImageBitmap(bitmap)
+}
+```
+### Output
+<img src="https://user-images.githubusercontent.com/20738169/166691688-fd230dc6-1ca0-42bb-a23e-f8c70771bceb.png" width="300px">
+
 ## Dependencies
 - [receiptline](https://github.com/receiptline/receiptline)
     * for generate receipt images

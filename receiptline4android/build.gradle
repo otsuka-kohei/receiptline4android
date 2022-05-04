@@ -10,7 +10,7 @@ plugins {
 }
 
 ext {
-    versionName = "0.1"
+    versionName = "0.2"
 }
 
 android {

@@ -1,3 +1,9 @@
+/*
+Commands:
+Build AAR for release: gradlew assembleRelease
+Push to GitHub Packages: gradlew assembleRelease publish
+ */
+
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'

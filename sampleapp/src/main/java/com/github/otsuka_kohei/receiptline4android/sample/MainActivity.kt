@@ -15,8 +15,10 @@ class MainActivity : AppCompatActivity() {
         MainScope().launch {
             val receiptLine = Receiptline.getInstance(this@MainActivity)
             val bitmap =
-                receiptLine.transformToBitmap("""{w:*,4,8}\n-\n|ITEM | QTY| AMOUNT|\n-\n_Apple | 1| 1.00\n"Banana | 2| 2.00\n`Cherry | 3| 3.00\n-\n{w:*,16}\n^^TOTAL | ^^^6.00\n{c:201234567890;o:ean,hri}\n\n{c:Receiptline;o:qrcode,4}""")
-
+                receiptLine.transformToBitmap(
+                    """{w:*,4,8}\n-\n|ITEM | QTY| AMOUNT|\n-\n_Apple | 1| 1.00\n"Banana | 2| 2.00\n`Cherry | 3| 3.00\n-\n{w:*,16}\n^^TOTAL | ^^^6.00\n{c:201234567890;o:ean,hri}\n\n{c:Receiptline;o:qrcode,4}""",
+                    dpi = 150f
+                )
             val imageView: ImageView = findViewById(R.id.imageView)
             imageView.setImageBitmap(bitmap)
         }

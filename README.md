@@ -4,7 +4,8 @@
 Get Android bitmap from receipt image of [receiptline](https://github.com/receiptline/receiptline).
 
 ## How to use
-### Method 1: JitPack (Recommended)
+### Add dependency
+#### Method 1: JitPack (Recommended)
 Add this Maven repository to your root `build.gradle`.
 ```gradle
 allprojects {
@@ -20,7 +21,7 @@ dependencies {
 }
 ```
 
-### Method 2: GitHub Packages
+#### Method 2: GitHub Packages
 Add this Maven repository to your root `build.gradle`.
 ```gradle
 allprojects {
@@ -43,8 +44,8 @@ dependencies {
 }
 ```
 
-## Examples
-### Input
+### Examples
+#### Input
 ```kotlin
 MainScope().launch {
   val receiptLine = Receiptline.getInstance(this@MainActivity)
@@ -57,7 +58,7 @@ MainScope().launch {
   imageView.setImageBitmap(bitmap)
 }
 ```
-### Output
+#### Output
 <img src="https://user-images.githubusercontent.com/20738169/166691688-fd230dc6-1ca0-42bb-a23e-f8c70771bceb.png" width="300px">
 
 ## Dependencies

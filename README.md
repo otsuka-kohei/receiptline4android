@@ -40,7 +40,7 @@ allprojects {
 Add this dependency to your module `build.gradle`.
 ```gradle
 dependencies {
-   implementation 'com.github.otsuka-kohei:receiptline4android:<version>'
+   implementation 'com.github.otsuka_kohei:receiptline4android:<version>'
 }
 ```
 
